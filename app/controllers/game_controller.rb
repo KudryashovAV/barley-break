@@ -1,5 +1,5 @@
 class GameController < ApplicationController
   def show
-  	A=[0..15]
+  	@array = [0..15].sort_by {rand}
   end
 end
