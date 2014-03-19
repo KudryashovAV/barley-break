@@ -9,12 +9,13 @@
 <table border="2">
 <% for row in 0..3 %>
      <tr>
-     <% for col in 0..3 do
+     <% for col in 0..3
      @array[row*4+col] %>
         <td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "1", game_show_path %></td>
     	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "2", game_show_path %></td>
     	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "3", game_show_path %></td>
     	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "4", game_show_path %></td>
+    <%end%>	
     </tr>
     <tr>
     	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "5", game_show_path %></td>
@@ -33,8 +34,7 @@
     	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "14", game_show_path %></td>
     	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "15", game_show_path %></td>
     	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "16", game_show_path %></td>
-    <%end%>	
-    </tr>
+        </tr>
  <% end %>   
  </table>
  
