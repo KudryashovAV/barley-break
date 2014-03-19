@@ -6,35 +6,13 @@
 </li>
 <% end %>
 </ul>
+
 <table border="2">
 <% for row in 0..3 %>
-     <tr>
-     <% for col in 0..3
-     @array[row*4+col] %>
-        <td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "1", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "2", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "3", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "4", game_show_path %></td>
-    <%end%>	
+     <tr>  
+     <% for col in 0..3 %>   
+        <td ALIGN=center WIDTH=50 HEIGHT=50><%= @array[row*4+col] %></td>
+    <% end %>
     </tr>
-    <tr>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "5", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "6", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "7", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "8", game_show_path %></td>
-    </tr>
-    <tr>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "9", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "10", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "11", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "12", game_show_path %></td>
-    </tr>
-    <tr>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "13", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "14", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "15", game_show_path %></td>
-    	<td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to "16", game_show_path %></td>
-        </tr>
- <% end %>   
- </table>
- 
+<% end %> 
+</table>
