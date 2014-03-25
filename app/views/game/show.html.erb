@@ -3,7 +3,7 @@
 <% for row in 0..3 %>
      <tr>  
      <% for col in 0..3 %>   
-        <td ALIGN=center WIDTH=50 HEIGHT=50><%= @array[row*4+col] %></td>
+        <td ALIGN=center WIDTH=50 HEIGHT=50><%= link_to @array[row*4+col], game_show_path %></td>
     <% end %>
     </tr>
 <% end %> 
